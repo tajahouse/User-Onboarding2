@@ -9,7 +9,7 @@ const formSchema = Yup.object().shape({
     password: Yup.string()
       .min(6, "Password must be at least 6 characters long.")
       .required("Password is required"),
-    terms: Yup.boolean().oneOf([true], "You must accept Terms and Conditions")
+    terms: Yup.boolean().oneOf([true], "You must accept the Terms and Conditions")
   });
 
 const Form = () =>{
@@ -48,6 +48,7 @@ const Form = () =>{
                 />
             </label>
             <button>Submit</button>
+
         </form>       
     );
 }
