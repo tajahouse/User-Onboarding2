@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: coral;
+  box-shadow: 2px 3px 3px grey;
+  width: 60%;
+  margin-left: 6em;
+}
+label {
+  padding: 1.5em;
+}
