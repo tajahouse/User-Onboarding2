@@ -9,7 +9,7 @@ const formSchema = yup.object().shape({
     .string()
     .email("Has to be a valid email address.")
     .required("Must include email address."),
-  terms: yup.boolean().oneOf([true], "please agree to terms of use"),
+  terms: yup.boolean().oneOf([true], "Please agree to terms of use"),
 
 });
 
