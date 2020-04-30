@@ -101,6 +101,7 @@ export default function Form() {
           name="name"
           value={formState.name}
           onChange={inputChange}
+          data-cy="name"
         />
         {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
       </label>
@@ -111,6 +112,7 @@ export default function Form() {
           name="email"
           value={formState.email}
           onChange={inputChange}
+          data-cy="email"
         />
         {errors.email.length > 0 ? (
           <p className="error">{errors.email}</p>
@@ -122,6 +124,7 @@ export default function Form() {
           name="password"
           value={formState.password}
           onChange={inputChange}
+          data-cy="password"
         />
         {errors.password.length > 0 ? (
           <p className="error">{errors.password}</p>
@@ -135,6 +138,7 @@ export default function Form() {
           name="terms"
           checked={formState.terms}
           onChange={inputChange}
+          data-cy="terms"
         />
       </label>
       {/* displaying our post request data */}
