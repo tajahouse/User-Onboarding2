@@ -103,7 +103,7 @@ export default function Form() {
           onChange={inputChange}
           data-cy="name"
         />
-        {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
+        {errors.name.length > 0 ? <p className="error" error-cy="name">{errors.name}</p> : null}
       </label>
       <label htmlFor="email">
         Email
@@ -115,7 +115,7 @@ export default function Form() {
           data-cy="email"
         />
         {errors.email.length > 0 ? (
-          <p className="error">{errors.email}</p>
+          <p className="error" error-cy="email">{errors.email}</p>
         ) : null}
       </label>
       <label htmlFor="password">
@@ -127,7 +127,7 @@ export default function Form() {
           data-cy="password"
         />
         {errors.password.length > 0 ? (
-          <p className="error" cy_error="password">{errors.password}</p>
+          <p className="error" error-cy="password">{errors.password}</p>
         ) : null}
       </label>
 
@@ -141,9 +141,10 @@ export default function Form() {
           data-cy="terms"
         />
       </label>
+ 
       {/* displaying our post request data */}
       <pre>{JSON.stringify(users, null, 2)}</pre>
-      <button type="submit" disabled={buttonDisabled}>Submit Here</button>
+      <button type="submit" disabled={buttonDisabled} button-cy="button">Submit Here</button>
     </form>
   );
 }
