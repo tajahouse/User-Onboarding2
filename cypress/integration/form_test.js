@@ -26,6 +26,6 @@ describe('Test 1', function(){
     })
     it('errors test', () => {
         cy.get('[data-cy="email"]').type(errorUser.email).should("have.value", errorUser.email)
-        cy.get('[error-cy="name"]').should("have.value", errorUser.email)
+        cy.get('[error-cy="name"]').type(errorUser.email).should("have.text", errorUser.email)
     })
 })
