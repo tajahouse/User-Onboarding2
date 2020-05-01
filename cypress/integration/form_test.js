@@ -5,7 +5,7 @@ const user={
 }
 
 const errorUser={
-    name:"",
+    name:"this",
     email:"email",
     password:"fail",
 }
@@ -26,6 +26,8 @@ describe('Test 1', function(){
     })
     it('errors test', () => {
         cy.get('[data-cy="email"]').type(errorUser.email).should("have.value", errorUser.email)
-        cy.get('[error-cy="name"]').type(errorUser.email).should("have.text", errorUser.email)
+        cy.get('[error-cy="email"]').should("have.text", "Has to be a valid email address.")
+        cy.get('[data-cy="name"]').type(errorUser.name).clear()
+        cy.get('[error-cy="name"]').should("have.text", "Name is a required field.")
     })
 })
