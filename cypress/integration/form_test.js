@@ -1,3 +1,9 @@
+const user={
+    name: "test",
+    email:"email@email.com",
+    password:"password",
+}
+
 describe('Test 1', function(){
     beforeEach(function(){
         cy.visit("http://localhost:3000")

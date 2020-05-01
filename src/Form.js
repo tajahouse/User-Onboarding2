@@ -127,7 +127,7 @@ export default function Form() {
           data-cy="password"
         />
         {errors.password.length > 0 ? (
-          <p className="error">{errors.password}</p>
+          <p className="error" cy_error="password">{errors.password}</p>
         ) : null}
       </label>
 
