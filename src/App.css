@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(211, 118, 5);
 }
 
 .App-logo {
@@ -41,11 +42,22 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: coral;
+  background-color: rgb(111, 41, 218);
   box-shadow: 2px 3px 3px grey;
-  width: 60%;
+  width: 50%;
   margin-left: 6em;
 }
 label {
   padding: 1.5em;
+}
+
+h1{
+  text-align: center;
+}
+
+.form-wrapper{
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  margin-left: 30em;
 }

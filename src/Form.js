@@ -93,6 +93,7 @@ export default function Form() {
   };
 
   return (
+    <div className="form-wrapper">
     <form onSubmit={formSubmit}>
       <label htmlFor="name">
         Name
@@ -146,5 +147,6 @@ export default function Form() {
       <pre>{JSON.stringify(users, null, 2)}</pre>
       <button type="submit" disabled={buttonDisabled} button-cy="button">Submit Here</button>
     </form>
+    </div>
   );
 }
